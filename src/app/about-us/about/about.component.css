@@ -1,0 +1,10 @@
+@media (min-width: 767px){
+    .ml-lg-n5, .mx-lg-n5 {
+        margin-left: -3rem!important;
+    }
+  }
+  @media (min-width: 992px){
+    .ml-lg-n5, .mx-lg-n5 {
+        margin-left: -5rem!important;
+    }
+}

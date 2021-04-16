@@ -1,0 +1,33 @@
+.brands{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+.brand-img{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 30px;
+}
+.brand-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media (max-width: 768px){
+    
+    .brands{
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .brand-img{
+      width: 35%;
+      margin: 0 auto;
+      height: 120px;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+   
+}

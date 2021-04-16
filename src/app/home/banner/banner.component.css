@@ -1,0 +1,45 @@
+.banner {
+    background: url(../../../assets/banner.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.banner-box{
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.banner-box h1{
+    font-size: 3.5rem; 
+}
+.banner-box p{
+    font-size: 23px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+@media (max-width: 768px){
+    .banner {
+      height: 50vh;
+      margin-bottom: 30px;
+    }
+    .banner-box{
+      width: 95%;
+      padding: 20px;
+    }
+    .banner-box h1{
+      font-size: 2rem;
+    }
+    .banner-box p{
+      font-size: 16px;
+      margin-bottom: 0;
+      font-style: italic;
+    }
+}
