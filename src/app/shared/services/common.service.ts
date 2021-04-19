@@ -17,8 +17,8 @@ export class CommonService {
 
   // For scroll to element
 
-  scrollTo(sectionNmae: string) {
-    this.secName.next(sectionNmae);
+  scrollTo(sectionName: string) {
+    this.secName.next(sectionName);
   }
 
 }
