@@ -7,6 +7,8 @@ import { BannerComponent } from './banner/banner.component';
 import { MethodComponent } from './method/method.component';
 import { AboutComponent } from './about/about.component';
 import { BrandsComponent } from './brands/brands.component';
+import { CasesComponent } from './cases/cases.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { BrandsComponent } from './brands/brands.component';
     BannerComponent,
     MethodComponent,
     AboutComponent,
-    BrandsComponent
+    BrandsComponent,
+    CasesComponent,
+    ContactComponent
   ],
   imports: [
     CommonModule,

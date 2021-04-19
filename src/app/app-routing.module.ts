@@ -4,8 +4,8 @@ import { PageNotFoundComponent } from './shared/components/page-not-found/page-n
 
 const routes: Routes = [
   {
-    path: 'about',
-    loadChildren: () => import('./about-us/about-us.module').then(m => m.AboutUsModule)
+    path: 'case-detail',
+    loadChildren: () => import('./case-detail/case-detail.module').then(m => m.CaseDetailModule)
   },
   {
     path: '',

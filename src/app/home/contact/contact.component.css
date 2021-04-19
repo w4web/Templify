@@ -1,0 +1,50 @@
+.sec-contact {
+	padding: 150px 0 120px;
+}
+.social-icons {
+	display: flex;
+	align-items: center;
+}
+.social-icons > a {
+	background-color: #434343;
+	margin-right: 12px;
+	height: 35px;
+	width: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFF;
+	border-radius: 50%;
+	font-size: 15px;
+	text-decoration: none !important;
+}
+.contact-head {margin-bottom: 30px;}
+.info {
+	margin-bottom: 50px;
+}
+.social-information {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+.social-information i {
+	width: 20px;
+	text-align: center;
+	margin-right: 12px;
+}
+.social-information p {
+	margin: 0;
+}
+.form-group {
+	margin-bottom: 30px;
+}
+.form-control {
+	border-color: #434343 !important;
+	box-shadow: none !important;
+}
+
+@media (max-width: 767px){
+    .sec-contact {
+        padding: 70px 0 50px;
+    }
+}

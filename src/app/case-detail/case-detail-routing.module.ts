@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CaseDetailComponent } from './case-detail.component';
 import { PageNotFoundComponent } from '../shared/components/page-not-found/page-not-found.component';
-import { AboutUsComponent } from './about-us.component';
 
 const routes: Routes = [
-  { path: '', component: AboutUsComponent },
+  { path: '', component: CaseDetailComponent },
   { path: '**', component: PageNotFoundComponent }
 ];
 
@@ -12,4 +12,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AboutUsRoutingModule { }
+export class CaseDetailRoutingModule { }

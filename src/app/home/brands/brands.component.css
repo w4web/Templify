@@ -1,8 +1,7 @@
+.sec-brand {padding-top: 150px; padding-bottom: 100px;}
 .brands{
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
-    margin-bottom: 100px;
     flex-wrap: wrap;
 }
 .brand-img{
@@ -17,11 +16,7 @@
 }
 
 @media (max-width: 768px){
-    
-    .brands{
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
+  
     .brand-img{
       width: 35%;
       margin: 0 auto;
@@ -30,4 +25,10 @@
       margin-bottom: 30px;
     }
    
+}
+
+@media (max-width: 767px){
+
+  .sec-brand {padding-top: 70px; padding-bottom: 50px;}
+
 }
