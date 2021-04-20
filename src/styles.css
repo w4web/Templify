@@ -37,7 +37,7 @@ body{font-family: "Calibri";}
 }
 
 .nav-item{ margin: 0 5px;}
-nav .nav-link{font-size: 18px;padding-left: 18px;padding-right: 18px;font-weight: 600;}
+nav .nav-link{font-size: 18px;padding-left: 18px;padding-right: 18px;font-weight: 600; cursor: pointer;}
 .navbar-brand img{height: 50px;}
 p{font-size: 18px;color: #4b4b4b;font-family: "Calibri";}
 .bgimg1 {position: relative; background-color: #e5e5e5;height: 650px; display: flex;flex-direction: column;padding-top: 50px;}

@@ -9,6 +9,9 @@ import { CommonService } from '../shared/services/common.service';
 export class HomeComponent implements AfterViewInit {
 
   constructor(public commonService: CommonService) {
+
+    this.commonService.currentActive = 1;
+
     this.commonService.secName$.subscribe(
       data => {
         if (data == "banner") {

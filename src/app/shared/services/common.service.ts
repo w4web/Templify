@@ -9,7 +9,11 @@ export class CommonService {
   private secName = new Subject<string>();
   secName$ = this.secName.asObservable();
 
-  constructor() { }
+  public isOtherScreen: boolean = false;
+
+  constructor() {
+
+  }
 
   // Nav element active
 

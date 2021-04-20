@@ -15,7 +15,7 @@
                     <span class="fas fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
-                    <ul class="navbar-nav ml-auto mr-3">
+                    <ul *ngIf="!commonService.isOtherScreen" class="navbar-nav ml-auto mr-3">
                         <li class="nav-item">
                             <a (click)="commonService.scrollTo('banner')"
                                 [ngClass]="{'active': commonService.currentActive === 1}" class="nav-link">Home</a>
@@ -39,6 +39,13 @@
                         <li class="nav-item">
                             <a (click)="commonService.scrollTo('contact')"
                                 [ngClass]="{'active': commonService.currentActive === 6}" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+
+                    <ul *ngIf="commonService.isOtherScreen" class="navbar-nav ml-auto mr-3">
+                        <li class="nav-item">
+                            <a routerLink="/" class="nav-link"><i class="fas fa-long-arrow-alt-left"></i> Back to
+                                Home</a>
                         </li>
                     </ul>
 
