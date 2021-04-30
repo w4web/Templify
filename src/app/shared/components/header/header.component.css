@@ -1,3 +1,15 @@
+.language-switch {position: relative;}
+.lang-select {
+	background-color: transparent;
+	color: #FFF;
+	border: none;
+  -moz-appearance:none; /* Firefox */
+  -webkit-appearance:none; /* Safari and Chrome */
+  appearance:none;
+  padding-right: 24px;
+}
+.language-switch > i{position: absolute; right: 8px; top: 2px; pointer-events: none;}
+
 @media (max-width:768px){
   .nav-item{
     width: 150px;

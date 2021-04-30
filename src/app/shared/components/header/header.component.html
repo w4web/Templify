@@ -2,8 +2,16 @@
     <div class="orange h-top">
         <div class="container">
             <div class="text-right py-2">
-                <span class="mr-lg-5 mr-2">info@templify.nl</span>
-                <span class="">020-123 123 1</span>
+                <span class="mr-lg-4 mr-2">info@templify.nl</span>
+                <span class="mr-lg-4 mr-2">020-123 123 1</span>
+                <span class="language-switch">
+                    <i class="fas fa-angle-down"></i>
+                    <select #selectLang (change)="langChange(selectLang.value)" class="lang-select">
+                        <option *ngFor="let lang of languages" [value]="lang.value"
+                            [selected]="lang.value == current_lang">
+                            {{lang.text}}</option>
+                    </select>
+                </span>
             </div>
         </div>
     </div>
@@ -16,36 +24,17 @@
                 </button>
                 <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed">
                     <ul *ngIf="!commonService.isOtherScreen" class="navbar-nav ml-auto mr-3">
-                        <li class="nav-item">
-                            <a (click)="commonService.scrollTo('banner')"
-                                [ngClass]="{'active': commonService.currentActive === 1}" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a (click)="commonService.scrollTo('method')"
-                                [ngClass]="{'active': commonService.currentActive === 2}" class="nav-link">Werkwijze</a>
-                        </li>
-                        <li class="nav-item">
-                            <a (click)="commonService.scrollTo('about')"
-                                [ngClass]="{'active': commonService.currentActive === 3}" class="nav-link">Over ons</a>
-                        </li>
-                        <li class="nav-item">
-                            <a (click)="commonService.scrollTo('brands')"
-                                [ngClass]="{'active': commonService.currentActive === 4}" class="nav-link">Brands</a>
-                        </li>
-                        <li class="nav-item">
-                            <a (click)="commonService.scrollTo('cases')"
-                                [ngClass]="{'active': commonService.currentActive === 5}" class="nav-link">Cases</a>
-                        </li>
-                        <li class="nav-item">
-                            <a (click)="commonService.scrollTo('contact')"
-                                [ngClass]="{'active': commonService.currentActive === 6}" class="nav-link">Contact</a>
+                        <li class="nav-item" *ngFor="let item of i18n_data.MENU;">
+                            <a (click)="commonService.scrollTo(item.scrollTo)"
+                                [ngClass]="{'active': commonService.currentActive === item.currentActive}"
+                                class="nav-link">{{item.text}}</a>
                         </li>
                     </ul>
 
                     <ul *ngIf="commonService.isOtherScreen" class="navbar-nav ml-auto mr-3">
                         <li class="nav-item">
-                            <a routerLink="/" class="nav-link"><i class="fas fa-long-arrow-alt-left"></i> Back to
-                                Home</a>
+                            <a routerLink="/" class="nav-link"><i class="fas fa-long-arrow-alt-left"></i>
+                                {{i18n_data.BACK}}</a>
                         </li>
                     </ul>
 

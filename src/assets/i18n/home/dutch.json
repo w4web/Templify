@@ -1,0 +1,56 @@
+{
+  "MENU": [
+    {
+      "text": "Huis",
+      "scrollTo": "banner",
+      "currentActive": 1
+    },
+    {
+      "text": "Werkwijze",
+      "scrollTo": "method",
+      "currentActive": 2
+    },
+    {
+      "text": "Over ons",
+      "scrollTo": "about",
+      "currentActive": 3
+    },
+    {
+      "text": "Merken",
+      "scrollTo": "brands",
+      "currentActive": 4
+    },
+    {
+      "text": "Gevallen",
+      "scrollTo": "cases",
+      "currentActive": 5
+    },
+    {
+      "text": "Contact",
+      "scrollTo": "contact",
+      "currentActive": 6
+    }
+  ],
+  "BACK": "Terug naar huis",
+  "BANNER_TITLE": "Low code oplossingen",
+  "METHOD_TITLE": "Werkwijze",
+  "ABOUT_TITLE": "Over Ons",
+  "BTN_TEXT": "Less verder",
+  "CONTACT": {
+    "title1": "Laten we contact opnemen",
+    "description": "Neem contact met ons op met de volgende gegevens. en vul het formulier in met de details. ",
+    "location": "Templify BV, Laan van kronenburg 14, 1188 KS Amstelveen",
+    "mail": "contact@templify.com",
+    "mobile": "+1 989 989 9898",
+    "social_title": "Verbind je met ons :",
+    "title2": "Neem contact op",
+    "form": {
+      "first_name": "Voornaam",
+      "last_name": "Achternaam",
+      "email": "Email",
+      "message": "Bericht",
+      "send": "Sturen"
+    }
+  },
+  "FOOTER_TEXT": "Templify Alle rechten voorbehouden"
+}

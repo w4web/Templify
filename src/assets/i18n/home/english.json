@@ -1,0 +1,56 @@
+{
+    "MENU": [
+        {
+            "text": "Home",
+            "scrollTo": "banner",
+            "currentActive": 1
+        },
+        {
+            "text": "Method",
+            "scrollTo": "method",
+            "currentActive": 2
+        },
+        {
+            "text": "About us",
+            "scrollTo": "about",
+            "currentActive": 3
+        },
+        {
+            "text": "Brands",
+            "scrollTo": "brands",
+            "currentActive": 4
+        },
+        {
+            "text": "Cases",
+            "scrollTo": "cases",
+            "currentActive": 5
+        },
+        {
+            "text": "Contact",
+            "scrollTo": "contact",
+            "currentActive": 6
+        }
+    ],
+    "BACK": "Back to Home",
+    "BANNER_TITLE": "Low code solutions",
+    "METHOD_TITLE": "Method",
+    "ABOUT_TITLE": "About us",
+    "BTN_TEXT": "Read more",
+    "CONTACT": {
+        "title1": "Let's get in touch",
+        "description": "Contact us with the following details. and fillup the form with the details.",
+        "location": "Templify BV, Laan van kronenburg 14, 1188 KS Amstelveen",
+        "mail": "contact@templify.com",
+        "mobile": "+1 989 989 9898",
+        "social_title": "Connect with us :",
+        "title2": "Contact us",
+        "form": {
+            "first_name": "First Name",
+            "last_name": "Last Name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send"
+        }
+    },
+    "FOOTER_TEXT": "Templify All Rights Reserved"
+}
